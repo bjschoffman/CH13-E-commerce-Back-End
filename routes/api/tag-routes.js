@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     const tagData = await Tag.findAll({
       include: ({ 
         model: Product,
-        attributes: ['product_name', 'proce', 'stock', 'category_id']
+        attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
       })
     });
     res.status(200).json(tagData);
@@ -26,7 +26,7 @@ router.get('/:id', async (req, res) => {
     const tagData = await Tag.findByPk(req.params.id, {
       include: ({ 
         model: Product, 
-        attributes: ['product_name', 'price', 'stock', 'category_id']
+        attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
       }),
     });
 
@@ -42,7 +42,7 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  Tag.create({tag_name: req.body.tag_name,})
+  Tag.create({tag_name: req.body.tag_name})
     .then((tagData) => {res.json(tagData);
     })
     .catch ((err) => {res.json(err);

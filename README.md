@@ -2,36 +2,20 @@
 Object-Relational Mapping (ORM) Challenge
 
 ## Description
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+To build the back end for e-commerce site.  Which will take a working Express.js API and configure it to use Sequelize to interact with a MySQL database.
 
 ## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+1. Run MySQL shell to create the schema, then exit
+2. Run `npm run seed` to seed the data
+3. Run `node server.js`
+4. Open Insomnia to test API routes
 
 ## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Video Walkthrough
+https://drive.google.com/file/d/1r1v7NXPq15Xe5_uB-6xr6U8XAu3PnDDx/view
 
 ## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+U of M Full Stack Bootcamp Module 13 Activities
 
 ## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+MIT Licesne Copyright (c) 2023 bjschoffman
